@@ -250,7 +250,7 @@ const showresults = (content) => {
 
     ${desc}
                             <footer>
-                            <cite> - <ins> <a class="secondary" target="_blank" href="pathtest.html?search=${s}"> monitoring locations on the same reference mainstem</a> </ins>
+                            <cite> - <ins> <a class="secondary" target="_blank" href="/src/pathtest.html?search=${s}"> monitoring locations on the same reference mainstem</a> </ins>
                               </cite>
                             </footer>
                             </blockquote>
