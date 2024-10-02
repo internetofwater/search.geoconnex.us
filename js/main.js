@@ -169,7 +169,10 @@ function graphcall(q, n, o) {
             OPTIONAL { ?s schema:name ?name . }
             OPTIONAL { ?s schema:description ?desc . }
             OPTIONAL { ?s <http://www.w3.org/2000/01/rdf-schema#label> ?label .}
+            FILTER (STRSTARTS(STR(?s), "https://geoconnex.us/ref"))
+
         }
+        ORDER BY ASC(?score)
         LIMIT 100
       ` };
 
@@ -249,10 +252,6 @@ const showresults = (content) => {
     <h5 style="margin-bottom:0;margin-top:0"><a target="_blank" href="${s}" > ${name} </a></h5>
 
     ${desc}
-                            <footer>
-                            <cite> - <ins> <a class="secondary" target="_blank" href="/src/pathtest.html?search=${s}"> monitoring locations on the same reference mainstem</a> </ins>
-                              </cite>
-                            </footer>
                             </blockquote>
 `);
 
