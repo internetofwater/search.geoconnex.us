@@ -172,6 +172,7 @@ function graphcall(q, n, o) {
             FILTER (STRSTARTS(STR(?s), "https://geoconnex.us/ref"))
 
         }
+        ORDER BY ASC(?score)
         LIMIT 100
       ` };
 
