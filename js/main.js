@@ -152,7 +152,7 @@ function graphcall(q, n, o) {
   //document.getElementById('progress').style.visibility = "visible";
 
   (async () => {
-       var url = new URL("https://graph.geoconnex.us/repositories/iow"),
+       var url = new URL("https://graph.geoconnex.us"),
 
 
         params = {
