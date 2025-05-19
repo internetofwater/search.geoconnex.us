@@ -180,7 +180,7 @@ function truncate(n, useWordBoundary) {
 //   //document.getElementById('progress').style.visibility = "visible";
 
 //   (async () => {
-//        var url = new URL("https://graph.geoconnex.us/repositories/iowdev"),
+//        var url = new URL("https://graph.geoconnex.us"),
 
 
 //         params = {
